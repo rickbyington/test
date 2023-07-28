@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,11 @@
   "postinstall": "go-npm install",
   "preuninstall": "go-npm uninstall",
   "goBinary": {
-    "name": "command-name",
+    "name": "rick",
     "path": "./bin",
-    "url": "https://github.com/user/my-go-package/releases/download/v{{version}}/myGoPackage_{{version}}_{{platform}}_{{arch}}.tar.gz"
+    "url": "https://github.com/rickbyington/test/releases/download/v{{version}}/myGoPackage_{{version}}_{{platform}}_{{arch}}.tar.gz"
+  },
+  "dependencies": {
+    "go-npm": "^0.1.9"
   }
 }
